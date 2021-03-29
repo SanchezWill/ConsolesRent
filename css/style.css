@@ -98,10 +98,11 @@ body {
 	font-weight: 200;
 }
 .underline {
-	max-width: 500px;
+	max-width: 50%;
 	width: 100%;
 	height: 1px;
 	background-color: #fff;
+	margin-left: auto;
 }
 .subtitle {
 	margin-top: 50px;
@@ -116,6 +117,7 @@ body {
 	border: #fff 1px solid;
 	color: #fff;
 	margin-bottom: 220px;
+	cursor: pointer;
 }
 /* slider */
 .slider {
@@ -233,12 +235,16 @@ body {
 	top: -550px;
 	pointer-events: none;
 	z-index: 1;
+	width: 100%;
+	height: auto;
 }
 .the-background2 {
 	position: absolute;
 	top: 350px;
 	pointer-events: none;
 	z-index: 1;
+	width: 100%;
+	height: auto;
 }
 .block__title {
 	font-family: Roboto;
@@ -338,6 +344,10 @@ body {
 	letter-spacing: 0.1em;
 	color: #ffffff;
 }
+.footer__number {
+	text-decoration: none;
+	color: #ffffff;
+}
 .footer__text {
 	font-family: Roboto;
 	font-style: normal;
@@ -345,7 +355,6 @@ body {
 	font-size: 18px;
 	line-height: 50px;
 	letter-spacing: 0.1em;
-	color: #ffffff;
 	z-index: 40;
 }
 .footer__contacts {
@@ -371,6 +380,9 @@ body {
 	.slider__container {
 		max-width: 100%;
 	}
+	.footer__tagline {
+		margin-right: 15px;
+	}
 }
 @media (max-width: 721px) {
 	.header {
@@ -388,10 +400,6 @@ body {
 		font-size: 45px;
 		line-height: 40px;
 	}
-	.title {
-		font-size: 22px;
-		line-height: 22px;
-	}
 	.subtitle {
 		font-size: 26px;
 		line-height: 32px;
@@ -404,7 +412,7 @@ body {
 		margin-bottom: 100px;
 	}
 	.slider {
-		padding: 15px 15px 1400px 15px;
+		padding: 15px 15px 75px 15px;
 		background: url(../img/backgroun/klipartz\ 2.png) center 400px / 80% auto no-repeat,
 			url(../img/backgroun/klipartz\ 3.png) 0 1000px / 80% auto no-repeat;
 	}
@@ -532,7 +540,7 @@ body {
 	}
 }
 @media (max-width: 371px) {
-	.header__title {
+	.title {
 		font-size: 30px;
 		line-height: 35px;
 	}
